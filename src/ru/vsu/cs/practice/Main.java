@@ -9,7 +9,7 @@ public class Main {
     static final Square SQUARE_1 = new Square(new int[][]{{-5, 1}, {1, 7}}, SimpleColor.GREEN);
     static final Square SQUARE_2 = new Square(new int[][]{{1, 2}, {8, 9}}, SimpleColor.WHITE);
     static final Circle CIRCLE_1 = new Circle(new int[]{-5, 2}, 3, SimpleColor.WHITE);
-    static final Parabola PARABOLA_1 = new Parabola(new int[]{3, -3}, -2, SimpleColor.GRAY);
+    static final Parabola PARABOLA_1 = new Parabola(new int[]{3, -3}, 0.5, SimpleColor.GRAY);
 
     public static SimpleColor getColor(double[] point) {
         if (SQUARE_1.isInside(point)) {
