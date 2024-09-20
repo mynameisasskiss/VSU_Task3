@@ -17,7 +17,7 @@ public class Square {
 
     public boolean isInside(Point point) {
         if ((RU_POINT.x >= point.x) && (point.x >= LD_POINT.x)) {
-            return (RU_POINT.y >= point.y) && (point.x >= LD_POINT.x);
+            return (RU_POINT.y >= point.y) && (point.y >= LD_POINT.y);
         }
         return false;
     }
