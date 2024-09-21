@@ -16,6 +16,6 @@ public class Circle {
     }
 
     public boolean isInside(Point point) {
-        return Math.abs(point.x - CENTER_POINT.x) + Math.abs(point.y - CENTER_POINT.y) <= RADIUS;
+        return Math.pow(point.x - CENTER_POINT.x, 2) + Math.pow(point.y - CENTER_POINT.y, 2) <= Math.pow(RADIUS, 2);
     }
 }
