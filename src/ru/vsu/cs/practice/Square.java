@@ -1,23 +1,23 @@
 package ru.vsu.cs.practice;
 
 public class Square {
-    private final Point LD_POINT; // левая нижняя точка
-    private final Point RU_POINT; // правая верхняя точка
-    private final SimpleColor COLOR;
+    private Point LDPoint; // левая нижняя точка
+    private Point RUPoint; // правая верхняя точка
+    private SimpleColor color;
 
     public Square(Point[] point, SimpleColor color) {
-        this.LD_POINT = point[0];
-        this.RU_POINT = point[1];
-        this.COLOR = color;
+        this.LDPoint = point[0];
+        this.RUPoint = point[1];
+        this.color = color;
     }
 
     public SimpleColor getColor() {
-        return COLOR;
+        return color;
     }
 
     public boolean isInside(Point point) {
-        if ((RU_POINT.x >= point.x) && (point.x >= LD_POINT.x)) {
-            return (RU_POINT.y >= point.y) && (point.y >= LD_POINT.y);
+        if ((RUPoint.x >= point.x) && (point.x >= LDPoint.x)) {
+            return (RUPoint.y >= point.y) && (point.y >= LDPoint.y);
         }
         return false;
     }

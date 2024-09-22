@@ -1,21 +1,21 @@
 package ru.vsu.cs.practice;
 
 public class Parabola {
-    private final Point ZERO_POINT;
-    private final double MULTIPLIER;
-    private final  SimpleColor COLOR;
+    private Point zeroPoint;
+    private double multiplier;
+    private SimpleColor color;
 
     public Parabola(Point zeroPoint, double multiplier, SimpleColor color) {
-        this.ZERO_POINT = zeroPoint;
-        this.MULTIPLIER = multiplier;
-        this.COLOR = color;
+        this.zeroPoint = zeroPoint;
+        this.multiplier = multiplier;
+        this.color = color;
     }
 
     public SimpleColor getColor() {
-        return COLOR;
+        return color;
     }
 
     public boolean isInside(Point point) {
-        return (Math.pow(point.y-ZERO_POINT.y,2)) <= (-2*MULTIPLIER*(point.x-ZERO_POINT.x));
+        return (Math.pow(point.y-zeroPoint.y,2)) <= (-2*multiplier*(point.x-zeroPoint.x));
     }
 }

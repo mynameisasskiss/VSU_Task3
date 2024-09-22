@@ -1,21 +1,21 @@
 package ru.vsu.cs.practice;
 
 public class Circle {
-    private final Point CENTER_POINT;
-    private final int RADIUS;
-    private final SimpleColor COLOR;
+    private Point centerPoint;
+    private int radius;
+    private SimpleColor color;
 
     public Circle(Point center, int radius, SimpleColor color) {
-        this.CENTER_POINT = center;
-        this.RADIUS = radius;
-        this.COLOR = color;
+        this.centerPoint = center;
+        this.radius = radius;
+        this.color = color;
     }
     
     public SimpleColor getColor() {
-        return COLOR;
+        return color;
     }
 
     public boolean isInside(Point point) {
-        return Math.pow(point.x - CENTER_POINT.x, 2) + Math.pow(point.y - CENTER_POINT.y, 2) <= Math.pow(RADIUS, 2);
+        return Math.pow(point.x - centerPoint.x, 2) + Math.pow(point.y - centerPoint.y, 2) <= Math.pow(radius, 2);
     }
 }
