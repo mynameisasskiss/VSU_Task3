@@ -1,9 +1,9 @@
 package ru.vsu.cs.practice;
 
 public class Circle {
-    private Point centerPoint;
-    private int radius;
-    private SimpleColor color;
+    private final Point centerPoint;
+    private final int radius;
+    private final SimpleColor color;
 
     public Circle(Point center, int radius, SimpleColor color) {
         this.centerPoint = center;

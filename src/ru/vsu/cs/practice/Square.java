@@ -1,9 +1,9 @@
 package ru.vsu.cs.practice;
 
 public class Square {
-    private Point LDPoint; // левая нижняя точка
-    private Point RUPoint; // правая верхняя точка
-    private SimpleColor color;
+    private final Point LDPoint; // левая нижняя точка
+    private final Point RUPoint; // правая верхняя точка
+    private final SimpleColor color;
 
     public Square(Point[] point, SimpleColor color) {
         this.LDPoint = point[0];

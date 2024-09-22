@@ -1,9 +1,9 @@
 package ru.vsu.cs.practice;
 
 public class Parabola {
-    private Point zeroPoint;
-    private double multiplier;
-    private SimpleColor color;
+    private final Point zeroPoint;
+    private final double multiplier;
+    private final SimpleColor color;
 
     public Parabola(Point zeroPoint, double multiplier, SimpleColor color) {
         this.zeroPoint = zeroPoint;
