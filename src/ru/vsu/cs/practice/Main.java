@@ -44,16 +44,16 @@ public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.ROOT);
 
-        Point point1 = new Point(5,0);
-        Point point2 = new Point(7,5);
-        Point point3 = new Point(-7,9);
-        Point point4 = new Point(7,-5);
-        Point point5 = new Point(-2,8);
-        Point point6 = new Point(3,-6);
-        Point point7 = new Point(6,9);
-        Point point8 = new Point(1,2);
-        Point point9 = new Point(4,8);
-        Point point10 = new Point(-2,5);
+        Point point1 = new Point(5, 0);
+        Point point2 = new Point(7, 5);
+        Point point3 = new Point(-7, 9);
+        Point point4 = new Point(7, -5);
+        Point point5 = new Point(-2, 8);
+        Point point6 = new Point(3, -6);
+        Point point7 = new Point(6, 9);
+        Point point8 = new Point(1, 2);
+        Point point9 = new Point(4, 8);
+        Point point10 = new Point(-2, 5);
 
         outputColor(getColor(point1));
 
@@ -77,7 +77,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        Point myPoint = new Point(0,0);
+        Point myPoint = new Point(0, 0);
 
         System.out.println("Введите абсциссу точки");
         myPoint.x = scanner.nextDouble();
