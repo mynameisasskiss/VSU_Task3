@@ -12,6 +12,7 @@ public class Main {
     static final Parabola PARABOLA_1 = new Parabola(new Point(3, -3), 0.5, SimpleColor.GRAY);
 
     public static SimpleColor getColor(Point point) {
+        System.out.printf("(%s, %s) -> ", point.x, point.y);
         if (SQUARE_1.isInside(point)) {
             return SQUARE_1.getColor();
         }
@@ -42,6 +43,37 @@ public class Main {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.ROOT);
+
+        Point point1 = new Point(5,0);
+        Point point2 = new Point(7,5);
+        Point point3 = new Point(-7,9);
+        Point point4 = new Point(7,-5);
+        Point point5 = new Point(-2,8);
+        Point point6 = new Point(3,-6);
+        Point point7 = new Point(6,9);
+        Point point8 = new Point(1,2);
+        Point point9 = new Point(4,8);
+        Point point10 = new Point(-2,5);
+
+        outputColor(getColor(point1));
+
+        outputColor(getColor(point2));
+
+        outputColor(getColor(point3));
+
+        outputColor(getColor(point4));
+
+        outputColor(getColor(point5));
+
+        outputColor(getColor(point6));
+
+        outputColor(getColor(point7));
+
+        outputColor(getColor(point8));
+
+        outputColor(getColor(point9));
+
+        outputColor(getColor(point10));
 
         Scanner scanner = new Scanner(System.in);
 
