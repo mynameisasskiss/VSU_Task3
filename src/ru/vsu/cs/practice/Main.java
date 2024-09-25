@@ -14,14 +14,17 @@ public class Main {
 
     public static SimpleColor getColor(Point point) {
         System.out.printf("(%s, %s) -> ", point.x, point.y);
+        if (CIRCLE_1.isInside(point)) {
+            if (SQUARE_1.isInside(point) || PARABOLA_1.isInside(point)) {
+                return SimpleColor.BLUE;
+            }
+            return CIRCLE_1.getColor();
+        }
         if (SQUARE_1.isInside(point)) {
             return SQUARE_1.getColor();
         }
         if (SQUARE_2.isInside(point)) {
             return SQUARE_2.getColor();
-        }
-        if (CIRCLE_1.isInside(point)) {
-            return CIRCLE_1.getColor();
         }
         if (PARABOLA_1.isInside(point)) {
             return PARABOLA_1.getColor();
